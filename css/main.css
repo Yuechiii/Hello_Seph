@@ -8,13 +8,13 @@
 
 :root {
   --dark-color: #000000;
-  --glow: #B6FFFA;
-  --leaf: #687EFF;
-  --stem: #6A9AB0;
-  --grass: #798645;
-  --circle: #98E4FF;
-  --petals: #80B3FF;
-  --petals1:#80b3ffbb;
+  --glow: #f2e7f5;
+  --circle: #dfa8ee;
+  --leaf: #d686ec;
+  --leaf_gradient: #8769d3;
+  --stem: #dfc8e4;
+  --petals: #dc96f0;
+  --petals1:#7659bd;
 }
 
 body {
@@ -244,12 +244,12 @@ body {
     rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), 
     repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, 
     rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), 
-    linear-gradient(90deg, rgba(207, 27, 168, 0.26), var(--glow));
+    linear-gradient(90deg, rgba(236, 9, 187, 0.26), var(--glow));
 }
 .flower__line {
   height: 55vmin;
   width: 1.5vmin;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, var(--leaf), rgb(0, 255, 191));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, var(--leaf), var(--leaf_gradient));
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   -webkit-animation: grow-flower-tree 4s backwards;
           animation: grow-flower-tree 4s backwards;
@@ -264,7 +264,7 @@ body {
   height: var(--h);
   border-top-right-radius: var(--h);
   border-bottom-left-radius: var(--h);
-  background-image: linear-gradient(to top,var(--leaf), rgb(0, 255, 191));
+  background-image: linear-gradient(to top,var(--leaf), var(--leaf_gradient));
 }
 .flower__line__leaf--1 {
   transform: rotate(70deg) rotateY(30deg);
@@ -816,7 +816,7 @@ body {
   width: 10vmin;
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
-  box-shadow: inset 0 2px 1vmin hsla(221, 94%, 44%, 0.2);
+  box-shadow: inset 0 2px 1vmin hsla(288, 72%, 57%, 0.2);
   background-image: linear-gradient(to bottom left, transparent, var(--dark-color)), linear-gradient(to bottom right, var(--leaf) 50%, transparent 50%, transparent);
   mask-image: linear-gradient(to bottom right, var(--leaf) 50%, transparent 50%, transparent);
   mask-image: linear-gradient(to bottom right, var(--leaf) 50%, transparent 50%, transparent);
@@ -862,7 +862,7 @@ body {
   width: 10vmin;
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
-  box-shadow: inset 0 2px 1vmin hsla(197, 97%, 58%, 0.2);
+  box-shadow: inset 0 2px 1vmin hsla(288, 97%, 58%, 0.2);
   background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%), linear-gradient(to bottom right, var(--leaf) 45%, transparent 50%, transparent);
   mask-image: linear-gradient(135deg, var(--leaf) 40%, transparent 50%, transparent);
 }
@@ -1008,7 +1008,7 @@ body {
   transform: scale(0.6) rotateX(60deg);
 }
 .long-g--2 .leaf, .long-g--3 .leaf {
-  mask-image: linear-gradient(to top, transparent 50%, var(--circle) 80%) !important;
+  mask-image: linear-gradient(to top, transparent 50%, var(--leaf) 80%) !important;
 }
 .long-g--2 .leaf--1, .long-g--3 .leaf--1 {
   left: -1vmin;
