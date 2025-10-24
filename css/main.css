@@ -7,14 +7,14 @@
 }
 
 :root {
-  --dark-color: #000000;
-  --glow: #f2e7f5;
-  --circle: #dfa8ee;
-  --leaf: #d686ec;
-  --leaf_gradient: #8769d3;
-  --stem: #dfc8e4;
-  --petals: #dc96f0;
-  --petals1:#7659bd;
+  --dark-color: #050510;              /* deep navy background */
+  --glow: #00eaff;                    /* electric cyan glow */
+  --circle: #00baff;                  /* bright neon blue */
+  --leaf: #0094ff;                    /* strong mid-blue */
+  --leaf_gradient: #0077ff;           /* darker gradient for depth */
+  --stem: #005fff;                    /* cool blue stem */
+  --petals: #00aaff;                  /* vibrant cyan-blue petals */
+  --petals1: #0077cc;                 /* slightly deeper variant */
 }
 
 body {
